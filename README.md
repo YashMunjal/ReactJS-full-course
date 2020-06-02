@@ -1,2 +1,5 @@
 # ReactJS-full-course
-# This is a repo of what i revise from youtube and you can ask
+This is a repo of what i revise from youtube and anyone can ask
+# Table of contents
+- setting up prettier
+- setting up ESLint

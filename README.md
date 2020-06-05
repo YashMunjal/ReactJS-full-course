@@ -7,3 +7,4 @@ This is a repo of what i revise from youtube and anyone can ask
 - setting up components
 - using state, effect hooks
 - using custom hooks
+- strict mode

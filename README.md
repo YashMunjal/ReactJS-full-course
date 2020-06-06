@@ -11,3 +11,4 @@ This is a repo of what i revise from youtube and anyone can ask
 - Reach routing
 - Class Components
 - Babel for Parcel
+- Error Boundaries

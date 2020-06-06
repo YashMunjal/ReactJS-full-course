@@ -9,3 +9,5 @@ This is a repo of what i revise from youtube and anyone can ask
 - using custom hooks
 - strict mode
 - Reach routing
+- Class Components
+- Babel for Parcel

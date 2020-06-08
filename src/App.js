@@ -10,7 +10,7 @@ const App = () => {
     <div>
       <h1 id="something-important">Adopt Me!</h1>
       <Router>
-        <Details path="/details/:id"></Details>
+        <Details path="/details/:id" ></Details>
         <SearchParams path="/"></SearchParams>
       </Router>
     </div>

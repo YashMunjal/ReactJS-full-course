@@ -2,6 +2,7 @@ import React from "react";
 import Pet from "./Pet";
 
 const Results = ({ pets }) => {
+  
   return (
     <div className="search">
       {pets.length === 0 ? (

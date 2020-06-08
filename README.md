@@ -12,3 +12,4 @@ This is a repo of what i revise from youtube and anyone can ask
 - Class Components
 - Babel for Parcel
 - Error Boundaries
+- context Api(Kinda redux)

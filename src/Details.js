@@ -1,10 +1,11 @@
 import React from "react";
 import pet from "@frontendmasters/pet";
-import Carousel from './Carousel'
+import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundaries";
+import ThemeContext from "./themeContext";
 
-class Details extends React.Component{
-  state={loading:true};
+class Details extends React.Component {
+  state = { loading: true };
   componentDidMount() {
     console.log(this.props.description);
     pet.animal(this.props.id).then(({ animal }) => {
@@ -18,21 +19,28 @@ class Details extends React.Component{
         loading: false,
       });
     });
-    
   }
   render() {
     if (this.state.loading) {
       <h1>Loading.....</h1>;
     }
-    const { animal, breed, description, location, name} = this.state;
-    
+    const { animal, breed, description, location, name } = this.state;
+
     return (
       <div className="details">
-           <Carousel  />
+        <Carousel />
         <div>
           <h1>{name}</h1>
           <h2>{`${animal} — ${breed} — ${location}`}</h2>
-          <button>Adopt {name}</button>
+
+          <ThemeContext.Consumer>
+            {(themeHook) => (
+              <button style={{ backgroundColor: themeHook[0] }}>
+                Adopt {name}
+              </button>
+            )}
+          </ThemeContext.Consumer>
+
           <p>{description}</p>
         </div>
       </div>
@@ -40,10 +48,10 @@ class Details extends React.Component{
   }
 }
 
-export default function DetailswithErrorBoundary(props){
+export default function DetailswithErrorBoundary(props) {
   return (
     <ErrorBoundary>
       <Details {...props}></Details>
     </ErrorBoundary>
-  )
+  );
 }

@@ -13,3 +13,9 @@ This is a repo of what i revise from youtube and anyone can ask
 - Babel for Parcel
 - Error Boundaries
 - context Api(Kinda redux)
+- Light/Dark theme using context
+
+
+# installations
+``npm i``
+To start dev environment ``npm run dev`` in terminal

@@ -14,7 +14,7 @@ This is a repo of what i revise from youtube and anyone can ask
 - Error Boundaries
 - context Api(Kinda redux)
 - Light/Dark theme using context
-
+- Babel and webpack configurations
 
 # installations
 ``npm i``

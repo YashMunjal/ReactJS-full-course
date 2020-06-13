@@ -15,7 +15,7 @@ This is a repo of what i revise from youtube and anyone can ask
 - context Api(Kinda redux)
 - Light/Dark theme using context
 - Babel and webpack configurations
-- useRef, useMemo , useCallback
+- useRef, useMemo , useCallback,useLayoutEffect,useImperativeHandle
 
 # installations
 ``npm i``

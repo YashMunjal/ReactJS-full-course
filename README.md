@@ -16,6 +16,8 @@ This is a repo of what i revise from youtube and anyone can ask
 - Light/Dark theme using context
 - Babel and webpack configurations
 - useRef, useMemo , useCallback,useLayoutEffect,useImperativeHandle
+- emotion js
+- Code Splitting
 
 # installations
 ``npm i``

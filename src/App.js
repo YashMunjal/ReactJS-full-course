@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 //import Pet from "./Pet";
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router";
 import SearchParams from "./SearchParams";
 import Details from "./Details";
 import ThemeContext from "./themeContext";
 import './style.css'
+import Navbar from "./navbar";
 
 
 const App = () => {
@@ -13,9 +14,7 @@ const App = () => {
   return (
     <ThemeContext.Provider value={themehook}>
       <div>
-        <header>
-          <Link to="/">Adopt Me!</Link>
-        </header>
+        <Navbar></Navbar>
         <Router>
           <Details path="/details/:id"></Details>
           <SearchParams path="/"></SearchParams>

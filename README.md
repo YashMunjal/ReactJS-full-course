@@ -18,6 +18,7 @@ This is a repo of what i revise from youtube and anyone can ask
 - useRef, useMemo , useCallback,useLayoutEffect,useImperativeHandle
 - emotion js
 - Code Splitting
+- Server Side Rendering
 
 # installations
 ``npm i``

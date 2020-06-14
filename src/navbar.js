@@ -9,7 +9,7 @@ import colors from './colors'
 const Navbar = () => {
     return (<header
     css={css`
-      background-color: ${colors.dark};;
+      background-color: ${colors.light};
       position: sticky;
       top: 0;
       z-index: 10;

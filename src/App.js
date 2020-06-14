@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import React, { useState, lazy, Suspense } from "react";
+//import ReactDOM from "react-dom";
 //import Pet from "./Pet";
 import { Router } from "@reach/router";
-import SearchParams from "./SearchParams";
-import Details from "./Details";
 import ThemeContext from "./themeContext";
-import './style.css'
+import "./style.css";
 import Navbar from "./navbar";
 
+const Details = lazy(() => import("./Details"));
+const SearchParams = lazy(() => import("./SearchParams"));
 
 const App = () => {
   const themehook = useState("peru");
@@ -15,13 +15,15 @@ const App = () => {
     <ThemeContext.Provider value={themehook}>
       <div>
         <Navbar></Navbar>
-        <Router>
-          <Details path="/details/:id"></Details>
-          <SearchParams path="/"></SearchParams>
-        </Router>
+        <Suspense fallback={<h1>loading route …</h1>}>
+          <Router>
+            <Details path="/details/:id"></Details>
+            <SearchParams path="/"></SearchParams>
+          </Router>
+        </Suspense>
       </div>
     </ThemeContext.Provider>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default App

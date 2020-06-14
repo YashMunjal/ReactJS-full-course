@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-//import ReactDOM from "react-dom";
+import ReactDOM from "react-dom";
 //import Pet from "./Pet";
 import { Router } from "@reach/router";
 import ThemeContext from "./themeContext";
@@ -23,4 +23,4 @@ const App = () => {
   );
 };
 
-export default App
+ReactDOM.render(<App />, document.getElementById("root"));

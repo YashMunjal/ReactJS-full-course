@@ -1,0 +1,16 @@
+.main__app{
+	background-color:#000;
+	height:100vh;
+	color:white;
+	text-align:center;
+	padding:20px;
+	font-size:20px;
+}
+.diceImg{
+	width:20%;
+}
+.dice-roller{
+	padding:10px;
+	font-size:15px;
+	margin-top:20px;
+}

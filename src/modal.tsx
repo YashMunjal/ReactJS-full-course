@@ -5,8 +5,8 @@ import {createPortal} from 'react-dom';
 const modalRoot = document.getElementById('modal');
 
 const Modal:FunctionComponent = ({children})=>{
-    const elRef=useRef(document.createElement('div'););
-        
+    const elRef=useRef(document.createElement('div'));
+
 
     useEffect(()=>{
         if(!modalRoot){

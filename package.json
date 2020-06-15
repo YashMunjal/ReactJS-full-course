@@ -28,7 +28,8 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.0.2",
     "parcel-bundler": "^1.12.1",
-    "prettier": "^1.16.1"
+    "prettier": "^1.16.1",
+    "typescript": "^3.9.5"
   },
   "scripts": {
     "build": "parcel build --public-url ./dist/ src/index.html",

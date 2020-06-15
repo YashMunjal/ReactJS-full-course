@@ -19,6 +19,9 @@ This is a repo of what i revise from youtube and anyone can ask
 - emotion js
 - Code Splitting
 - Server Side Rendering
+- Typescript implementation in React
+- Redux
+
 
 # installations
 ``npm i``

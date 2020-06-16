@@ -1,7 +1,12 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
+import {Animal} from '@frontendmasters/pet'
 import Pet from "./Pet";
 
-const Results = ({ pets }) => {
+interface Iprops{
+  pets:Animal[];
+}
+
+const Results:FunctionComponent<Iprops> = ({ pets }) => {
   
   return (
     <div className="search">
@@ -17,7 +22,7 @@ const Results = ({ pets }) => {
             media={pet.photos}
             location={`${pet.contact.address.city},${pet.contact.address.state}`}
             id={pet.id}
-          ></Pet>
+           />
         ))
       )}
     </div>

@@ -24,7 +24,7 @@ const useDropdown = (label:string, defaultState:string, options:string[]) => {
       </select>
     </label>
   );
-  return [state, Dropdown, updateState];
+  return [state, Dropdown, updateState] as [string,FunctionComponent,SetStateAction<string>];
 };
 
 export default useDropdown;

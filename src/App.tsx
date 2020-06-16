@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import ReactDOM from "react-dom";
-//import Pet from "./Pet";
+ // import Pet from "./Pet";
 import { Router } from "@reach/router";
 import ThemeContext from "./themeContext";
 
@@ -13,10 +13,10 @@ const App = () => {
   return (
     <ThemeContext.Provider value={themehook}>
       <div>
-        <Navbar></Navbar>
+        <Navbar />
           <Router>
-            <Details path="/details/:id"></Details>
-            <SearchParams path="/"></SearchParams>
+            <Details path="/details/:id" />
+            <SearchParams path="/" />
           </Router>
       </div>
     </ThemeContext.Provider>

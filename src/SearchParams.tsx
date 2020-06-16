@@ -28,6 +28,7 @@ const SearchParams :FunctionComponent<RouteComponentProps>= () => {
   useEffect(() => {
     setBreeds([]);
     setBreed("");
+    // tslint:disable-next-line: no-shadowed-variable
     pet.breeds(animal).then(({ breeds }) => {
       const breedStrings = breeds.map(({ name }) => name);
       setBreeds(breedStrings);

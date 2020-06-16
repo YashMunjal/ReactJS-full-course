@@ -16,7 +16,7 @@ class Carousel extends React.Component<IProps, IState> {
     active: 0,
   };
   public static getDerivedStateFromProps() {
-    let photos = ["http://placecorgi.com/600/600"];
+    const photos = ["http://placecorgi.com/600/600"];
 
     return { photos };
   }
